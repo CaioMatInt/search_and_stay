@@ -11,6 +11,7 @@ class Controller extends BaseController
     /**test commit**/
 
 
+
     
     use AuthorizesRequests, ValidatesRequests;
 }
