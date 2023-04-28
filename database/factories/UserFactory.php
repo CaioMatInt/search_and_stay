@@ -28,7 +28,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => Hash::make('password'),
             'remember_token' => Str::random(10),
-            'profile_type' => ProfileTypeEnum::Administrator,
+            'profile_type' => ProfileTypeEnum::Administrator->value,
             'profile_id' => Administrator::factory(),
             'provider_id' => null,
             'external_provider_id' => null,

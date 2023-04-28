@@ -21,8 +21,7 @@ class BookFactory extends Factory
         return [
             'name' => 'Chronicles of' . fake()->name,
             'isbn' =>  fake()->isbn13(),
-            'value' => fake()->numberBetween(1000, 1000000),
-            'image' => fake()->imageUrl()
+            'value' => fake()->numberBetween(1000, 1000000)
         ];
     }
 }

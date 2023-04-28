@@ -11,7 +11,6 @@ use App\Repositories\Eloquent\BookRepository;
 use App\Services\BookService;
 use App\Services\FileService;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {

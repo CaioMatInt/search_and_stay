@@ -11,7 +11,7 @@ class CheckAdministrator
 {
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->user() &&  auth()->user()->profile_type == ProfileTypeEnum::Administrator->name) {
+        if (auth()->user() &&  auth()->user()->profile_type == ProfileTypeEnum::Administrator->value) {
             return $next($request);
         }
 

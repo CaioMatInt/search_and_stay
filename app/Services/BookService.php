@@ -14,7 +14,7 @@ class BookService
 
     public function create(array $data)
     {
-        if ($data['image']) {
+        if (isset($data['image'])) {
             $imageFileName = $this->generateBookCoverName($data['name'], $data['image']->extension());
             $data['image'] = $this->fileService->save($data['image'], 'covers', $imageFileName);
         }
