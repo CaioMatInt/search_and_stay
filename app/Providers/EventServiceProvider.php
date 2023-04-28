@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use App\Events\BookCreatedEvent;
+use App\Events\BookDeletedEvent;
+use App\Events\BookUpdatedEvent;
+use App\Listeners\BookCreatedListener;
+use App\Listeners\BookDeletedListener;
+use App\Listeners\BookUpdatedListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -17,6 +23,15 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
+        ],
+        BookCreatedEvent::class => [
+            BookCreatedListener::class,
+        ],
+        BookUpdatedEvent::class => [
+            BookUpdatedListener::class,
+        ],
+        BookDeletedEvent::class => [
+            BookDeletedListener::class,
         ],
     ];
 
