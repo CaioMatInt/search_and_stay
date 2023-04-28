@@ -37,3 +37,7 @@ Some features of Laravel/PHP that were used:
 ![image](https://user-images.githubusercontent.com/40992883/178123101-c9fb1ecf-d56b-4237-b4cc-526d33aa79d3.png)
 
 
+
+## Postman Collection
+
+Postman Collection can be found in the root folder (search_and_stay.postman_collection.json)
