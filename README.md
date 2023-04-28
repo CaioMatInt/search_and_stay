@@ -28,6 +28,8 @@ Some features of Laravel/PHP that were used:
 * Rules
 * Storage (File Handling)
 * Phpunit (TDD)
+* Socialite
+
 ## Database Diagram
 
 ![image](https://user-images.githubusercontent.com/40992883/235095431-1a550b79-068a-4fe4-be16-3a564036ea0d.png)
